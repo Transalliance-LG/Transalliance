@@ -30,9 +30,12 @@ module.exports = {
         serviceimage: "url('../src/assets/serviceimage.png')",
         investimage: "url('../src/assets/investimage.png')",
         contactimage: "url('../src/assets/contactimage.png')",
-        team: "url('../src/assets/team.png')",
+        team: "url('../src/assets/team.jpg')",
         privacy: "url('../src/assets/privacy.png')",
         faqimage: "url('../src/assets/faqimage.png')",
+      },
+      scale: {
+        "-100": "-1",
       },
     },
   },

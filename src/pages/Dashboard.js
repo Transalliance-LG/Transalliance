@@ -24,7 +24,7 @@ import video from "../assets/video.png";
 import front from "../assets/front.png";
 import back from "../assets/back.png";
 import saba from "../assets/saba.png";
-import homevideo from "../assets/homevideo.mp4";
+import homevideo from "../assets/homevid.mp4";
 import learning from "../assets/learning.mp4";
 // import Lottie from 'react-lottie';
 // import mouse from "../assets/mouse.json"

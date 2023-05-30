@@ -1,13 +1,13 @@
 import React from "react";
 import executive1 from "../assets/executive1.png";
-import executive2 from "../assets/executive2.png";
-import executive3 from "../assets/executive3.png";
+import executive2 from "../assets/executive2.JPG";
+import executive3 from "../assets/executive3.JPG";
 import executive4 from "../assets/executive4.png";
-import executive5 from "../assets/executive5.png";
-import executive6 from "../assets/executive6.png";
+import executive5 from "../assets/executive5.JPG";
+import executive6 from "../assets/executive6.JPG";
 import executive7 from "../assets/executive7.png";
-import executive8 from "../assets/executive8.png";
-import executive9 from "../assets/executive9.png";
+// import executive8 from "../assets/executive8.png";
+import executive9 from "../assets/executive9.JPG";
 import linkedin from "../assets/linkedin.png";
 import map2 from "../assets/map2.png";
 import map1 from "../assets/map1.png";
@@ -52,11 +52,11 @@ const Team = () => {
       name: "Chuka Eboagwu",
       description: "Managing Director, Fazo Travel and Hospitality Services",
     },
-    {
-      pic: executive8,
-      name: "Olalekan Aroyewun",
-      description: "Managing Director, TransAlliance Capital",
-    },
+    // {
+    //   pic: executive8,
+    //   name: "Olalekan Aroyewun",
+    //   description: "Managing Director, TransAlliance Capital",
+    // },
     {
       pic: executive9,
       name: "Charles Isa",
@@ -66,7 +66,7 @@ const Team = () => {
 
   return (
     <div>
-      <div className="bg-team bg-no-repeat z-10  -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px] w-full bg-cover bg-center xl:h-[740px] h-[400px]  relative xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px] pt-[150px] pb-[100px] md:py-[150px] lg:py-[230px] 2xl:py-[350px] flex justify-center items-center text-[40px] md:text-[60px] xl:text-[100px] font-semibold text-yellow-400">
+      <div className="bg-team bg-no-repeat z-10  -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px] w-full bg-cover bg-center lg:h-[840px] xl:h-[1300px] h-[400px]  relative xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px] pt-[150px] pb-[100px] md:py-[150px] lg:py-[230px] 2xl:py-[350px] flex justify-center items-center text-[40px] md:text-[60px] xl:text-[100px] font-semibold text-yellow-400">
         TAG Team
       </div>
 

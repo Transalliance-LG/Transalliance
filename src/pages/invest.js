@@ -12,7 +12,7 @@ import alocation from "../assets/alocation.png";
 import { useForm, ValidationError } from "@formspree/react";
 import america from "../assets/america.png";
 import down2 from "../assets/down2.png";
-import anthony from "../assets/anthony.png";
+import anthony from "../assets/anthony.jpg";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xwkjypzy");
@@ -266,11 +266,14 @@ const Invest = () => {
           Learn more about investing in TransAlliance Group
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2   gap-[38px] items-start">
-          <div className=" grid grid-cols-1 lg:grid-cols-3 items-center gap-[20px]">
-            <div className="lg:col-start-1 lg:col-end-2 ">
-              <img className="lg:w-[253px] w-[133px]" src={anthony} />
+          <div className=" grid grid-cols-1 xl:grid-cols-3 items-center gap-[20px]">
+            <div className="xl:col-start-1 xl:col-end-2 ">
+              <img
+                className="lg:w-[300px] w-[300px] transform "
+                src={anthony}
+              />
             </div>
-            <div className="lg:col-start-2 lg:col-end-4">
+            <div className="xl:col-start-2 xl:col-end-4">
               <div className="mb-[30px]">
                 <div className="flex items-center">
                   <div>
