@@ -38,7 +38,7 @@ const Team = () => {
     },
     {
       pic: executive5,
-      name: "Beverly Owoghiri",
+      name: "Nneka Ngene",
       description:
         "Group Executive Director, Human Resources and Corporate Comms",
     },
