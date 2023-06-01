@@ -18,7 +18,7 @@ import nl from "../assets/nl.png";
 import tech from "../assets/tech.png";
 import binotone from "../assets/binotone.png";
 import person from "../assets/person.png";
-import globe from "../assets/globe.png";
+import globe2 from "../assets/globe2.png";
 import subsidiary from "../assets/subsidiary.png";
 import video from "../assets/video.png";
 import front from "../assets/front.png";
@@ -182,10 +182,11 @@ const Dashboard = ({ show }) => {
                 Financial Services
               </h4>
               <h4 className="text-[12px] md:text-[16px] xl:text-[18px] text-text xl:mt-[16px] md:mt-[10px] xl:leading-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea co
+                We offer a wide range of financial services to help you achieve
+                your financial goals. Whether you're looking for a advisory,
+                solutions or planing for retirement, we have the products and
+                services you need. We also offer a variety of educational
+                resources to help you make informed financial decisions.
               </h4>
             </div>
           </div>
@@ -199,10 +200,10 @@ const Dashboard = ({ show }) => {
                 Financial Technology
               </h4>
               <h4 className="text-[12px] md:text-[16px] xl:text-[18px] text-text xl:mt-[16px] md:mt-[10px] xl:leading-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea co
+                We are revolutionizing the financial technology ecosystem with
+                our wide range of services, ranging from seamless transactions,
+                payments, online accounts, mobile and internet banking. Take a
+                leap and join the AlliancePay movement.
               </h4>
             </div>
           </div>
@@ -216,10 +217,10 @@ const Dashboard = ({ show }) => {
                 Mining
               </h4>
               <h4 className="text-[12px] md:text-[16px] xl:text-[18px] text-text xl:mt-[16px] md:mt-[10px] xl:leading-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea co
+                Our comminttment is to sustainability, and we work to minimize
+                our environmental impact. We use the latest technologies to
+                extract resources efficiently and safely, and we recycle and
+                reuse materials whenever possible.
               </h4>
             </div>
           </div>
@@ -233,10 +234,11 @@ const Dashboard = ({ show }) => {
                 Energy (Oil & Gas)
               </h4>
               <h4 className="text-[12px] md:text-[16px] xl:text-[18px] text-text xl:mt-[16px] md:mt-[10px] xl:leading-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea co
+                We believe that the oil and gas industry is ripe for disruption.
+                The traditional methods of exploration and production are
+                outdated and inefficient. We are using new technologies to find
+                and extract oil and gas more safely, more efficiently, and more
+                sustainably.
               </h4>
             </div>
           </div>
@@ -250,10 +252,12 @@ const Dashboard = ({ show }) => {
                 Bureau de Change
               </h4>
               <h4 className="text-[12px] md:text-[16px] xl:text-[18px] text-text xl:mt-[16px] md:mt-[10px] xl:leading-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea co
+                Need to Exchange Currency? We've Got You Covered! We offer a
+                wide range of currencies, so you can be sure to find the one you
+                need. We also offer a variety of services, including: Currency
+                exchange, Money transfers, Foreign exchange trading etc. Our
+                Team of professionals are committed to providing our customers
+                with the best possible service.
               </h4>
             </div>
           </div>
@@ -267,10 +271,11 @@ const Dashboard = ({ show }) => {
                 Travel & Hospitality
               </h4>
               <h4 className="text-[12px] md:text-[16px] xl:text-[18px] text-text xl:mt-[16px] md:mt-[10px] xl:leading-[30px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea co
+                Ready to plan the perfect Vacation ? or just looking for a new
+                and exciting destination? We can help you find the perfect place
+                to stay, whether you're looking for a relaxing beach getaway or
+                an adventurous outdoor experience. We also offer a variety of
+                travel services, including flights, hotels, pick up etc
               </h4>
             </div>
           </div>
@@ -336,7 +341,7 @@ const Dashboard = ({ show }) => {
           </div>
           <div className=" py-[0px]  2xl:border-r-[1px] border-b-[0px] border-gray-300 items-center flex 2xl:justify-center justify-start ml-[20px] 2xl:mr-[0px] ">
             <div className="mr-[20px]">
-              <img className="lg:w-[60px] w-[25px] sm:w-[40px]" src={globe} />
+              <img className="lg:w-[60px] w-[25px] sm:w-[40px]" src={globe2} />
             </div>
             <div className="">
               <h4 className="text-text text-[24px] font-semibold md:text-[48px]">
@@ -349,7 +354,7 @@ const Dashboard = ({ show }) => {
           </div>
           <div className=" py-[0px] border-r-[1px]  2xl:border-r-[1px] border-b-[0px] border-gray-300 items-center flex 2xl:justify-center justify-start ml-[20px] 2xl:mr-[0px]">
             <div className="mr-[20px]">
-              <img className="lg:w-[60px] w-[25px] sm:w-[40px]" src={globe} />
+              <img className="lg:w-[60px] w-[25px] sm:w-[40px]" src={globe2} />
             </div>
             <div className="">
               <h4 className="text-text text-[24px] font-semibold md:text-[48px]">
