@@ -222,7 +222,7 @@ const Invest = () => {
             </h4>
           </div>
           <h4 className="text-[16px] xl:text-[20px] mt-[16px] 2xl:mt-[20px]">
-            investor-realtions@transalliance.ng
+            investor-relations@transalliance.ng
           </h4>
           <h4 className="text-[16px] xl:text-[20px] mt-[10px] 2xl:mt-[20px]">
             anthonynwosu@transalliance.ng
