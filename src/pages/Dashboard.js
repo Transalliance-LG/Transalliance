@@ -24,7 +24,7 @@ import video from "../assets/video.png";
 import front from "../assets/front.png";
 import back from "../assets/back.png";
 import saba from "../assets/saba.png";
-import homevideo from "../assets/homevid.mp4";
+import tras from "../assets/tras.mp4";
 import learning from "../assets/learning.mp4";
 // import Lottie from 'react-lottie';
 // import mouse from "../assets/mouse.json"
@@ -62,7 +62,7 @@ const Dashboard = ({ show }) => {
         <div className="bg-imagebig w-full bg-cover bg-center h-[50px]  z-40  absolute -bottom-[5px] left-0"></div>
       </div>
       <video
-        src={homevideo}
+        src={tras}
         autoPlay
         loop
         muted
