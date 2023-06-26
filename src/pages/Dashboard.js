@@ -1,6 +1,6 @@
 import React from "react";
 import download from "../assets/download.png";
-import company from "../assets/company.png";
+import company1 from "../assets/company1.png";
 import financial from "../assets/financial.png";
 import money from "../assets/money.png";
 import mining from "../assets/mining.png";
@@ -24,7 +24,7 @@ import video from "../assets/video.png";
 import front from "../assets/front.png";
 import back from "../assets/back.png";
 import saba from "../assets/saba.png";
-import tras from "../assets/tras.mp4";
+import tras1 from "../assets/tras1.mp4";
 import learning from "../assets/learning.mp4";
 // import Lottie from 'react-lottie';
 // import mouse from "../assets/mouse.json"
@@ -62,7 +62,7 @@ const Dashboard = ({ show }) => {
         <div className="bg-imagebig w-full bg-cover bg-center h-[50px]  z-40  absolute -bottom-[5px] left-0"></div>
       </div>
       <video
-        src={tras}
+        src={tras1}
         autoPlay
         loop
         muted
@@ -156,7 +156,7 @@ const Dashboard = ({ show }) => {
           expanding our reach. Whatever your needs we’ve got you covered.
         </h4>
         <div className="lg:mt-[56px] mt-[30px]">
-          <img src={company} />
+          <img src={company1} />
         </div>
       </div>
 
