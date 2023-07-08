@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import download from "../assets/download.png";
 import company1 from "../assets/company1.png";
 import financial from "../assets/financial.png";
@@ -25,6 +25,8 @@ import front from "../assets/front.png";
 import back from "../assets/back.png";
 import saba from "../assets/saba.png";
 import tras1 from "../assets/tras1.mp4";
+import tras33 from "../assets/tras33.mp4";
+import tras41 from "../assets/tras41.mp4";
 import learning from "../assets/learning.mp4";
 // import Lottie from 'react-lottie';
 // import mouse from "../assets/mouse.json"
@@ -39,9 +41,56 @@ const Dashboard = ({ show }) => {
   //     }
   //   };
 
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
+
+  useEffect(() => {
+    const video1 = videoRef1.current;
+    const video2 = videoRef2.current;
+
+    const handleVideoEnded = (video, nextVideo) => {
+      video.classList.add("hidden");
+      nextVideo.classList.remove("hidden");
+      nextVideo.play();
+    };
+
+    video1.addEventListener("ended", () => {
+      handleVideoEnded(video1, video2);
+    });
+
+    video2.addEventListener("ended", () => {
+      handleVideoEnded(video2, video1);
+    });
+
+    video1.play();
+
+    return () => {
+      video1.removeEventListener("ended", handleVideoEnded);
+      video2.removeEventListener("ended", handleVideoEnded);
+    };
+  }, []);
+
+  const [currentImage, setCurrentImage] = useState(1);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage === 1 ? 2 : 1));
+    }, 3000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className="main">
-      <div className="bg-homeimage bg-no-repeat z-10  -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px] w-full bg-cover bg-center h-full  pt-[100px] pb-[200px] md:py-[120px] lg:py-[180px] 2xl:py-[300px] xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px]  relative md:hidden">
+      <div
+        className={
+          currentImage === 1
+            ? "bg-homeimage01 bg-no-repeat z-10  -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px] w-full bg-cover bg-center h-full  pt-[100px] pb-[200px] md:py-[120px] lg:py-[180px] 2xl:py-[300px] xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px]  relative md:hidden"
+            : "bg-homeimage02 bg-no-repeat z-10  -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px] w-full bg-cover bg-center h-full  pt-[100px] pb-[200px] md:py-[120px] lg:py-[180px] 2xl:py-[300px] xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px]  relative md:hidden"
+        }
+      >
         <div className="md:grid grid-cols-2">
           <div className="col-start-2 col-end-3 text-white">
             <h4 className="text-[56px] 2xl:text-[100px] lg:text-[60px] leading-[70px] 2xl:leading-[130px]">
@@ -61,13 +110,43 @@ const Dashboard = ({ show }) => {
         </div>
         <div className="bg-imagebig w-full bg-cover bg-center h-[50px]  z-40  absolute -bottom-[5px] left-0"></div>
       </div>
-      <video
-        src={tras1}
-        autoPlay
-        loop
-        muted
-        className="  -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px]   z-10 w-auto min-w-full min-h-full  hidden md:flex"
-      />
+      <div
+        className=" hidden md:flex -mt-[70px] lg:-mt-[100px] 2xl:-mt-[200px]   z-10 
+"
+      >
+        <video
+          ref={videoRef1}
+          autoPlay
+          muted
+          className="w-auto min-w-full min-h-full object-cover"
+        >
+          <source src={tras33} type="video/mp4" />
+        </video>
+        <video
+          ref={videoRef2}
+          autoPlay
+          muted
+          className="w-auto min-w-full min-h-full object-cover hidden"
+        >
+          <source src={tras41} type="video/mp4" />
+        </video>
+        {/* <video
+          src={tras33}
+          ref={videoRef1}
+          autoPlay
+          loop
+          muted
+          className="  w-auto min-w-full min-h-full "
+        />
+        <video
+          src={tras41}
+          ref={videoRef2}
+          autoPlay
+          loop
+          muted
+          className="   w-auto min-w-full min-h-full "
+        /> */}
+      </div>
 
       <div className="absolute w-full h-full top-0  hidden md:flex">
         <div className="md:grid grid-cols-2 pt-[100px] pb-[200px] md:pb-[120px] lg:py-[120px] xl:py-[200px] 2xl:py-[300px] xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px]">
@@ -84,7 +163,7 @@ const Dashboard = ({ show }) => {
       </div>
 
       <div className="absolute lg:-mt-[100px] -mt-[70px] z-40 left-1/2 transform -translate-x-1/2 hidden md:flex">
-        <h4 className="text-white text-[16px] lg:text-[18px] lg:font-semibold">
+        <h4 className="text-white text-[16px] lg:text-[18px] lg:font-semibold z-10">
           Scroll Down
         </h4>
         {/* <Lottie options={defaultOptions}
@@ -93,7 +172,7 @@ const Dashboard = ({ show }) => {
               /> */}
       </div>
 
-      <div className="bg-imagebig w-full bg-cover bg-center h-[50px]  z-40 -mt-[49px] absolute hidden md:flex"></div>
+      <div className="bg-imagebig w-full bg-cover bg-center h-[50px]  z-10 -mt-[49px] absolute hidden md:flex"></div>
 
       <div className="bg-white xl:px-[50px] 2xl:px-[100px] lg:px-[50px] px-[15px] md:px-[30px] py-[56px] xl:py-[136px] md:py-[70px] md:grid md:grid-cols-2 lg:grid-cols-3 2xl:gap-[100px] md:gap-[30px]">
         <h4 className="col-start-1 col-end-2 text-[30px] font-semibold xl:text-[40px]">

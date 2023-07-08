@@ -20,7 +20,8 @@ module.exports = {
         1: "4px",
       },
       backgroundImage: {
-        homeimage: "url('../src/assets/homeimage1.png')",
+        homeimage01: "url('../src/assets/homeimage01.png')",
+        homeimage02: "url('../src/assets/homeimage02.png')",
         imagebig: "url('../src/assets/imagebig.png')",
         imagesmall: "url('../src/assets/imagesmall.png')",
         homeimage2: "url('../src/assets/homeimage2.png')",
