@@ -25,8 +25,8 @@ import front from "../assets/front.png";
 import back from "../assets/back.png";
 import saba from "../assets/saba.png";
 import tras1 from "../assets/tras1.mp4";
-import tras33 from "../assets/tras33.mp4";
-import tras41 from "../assets/tras41.mp4";
+import tras33 from "../assets/trans33.mp4";
+import tras41 from "../assets/trans41.mp4";
 import learning from "../assets/learning.mp4";
 // import Lottie from 'react-lottie';
 // import mouse from "../assets/mouse.json"
