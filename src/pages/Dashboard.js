@@ -402,7 +402,7 @@ const Dashboard = ({ show }) => {
       </div>
 
       <div className="xl:px-[100px] 2xl:px-[200px] lg:px-[100px] px-[15px] md:px-[30px]  py-[50px] lg:pb-[50px] xl:pb-[100px] bg-gray-100">
-        <div className="grid grid-cols-2 2xl:grid-cols-4 gap-y-[35px]  w-full mb-[100px]">
+        <div className="grid grid-cols-3 xl:grid-cols-3 gap-y-[35px]  w-full mb-[100px]">
           <div className=" pb-[0px]  border-r-[1px] border-b-[0px] border-gray-300  items-center flex 2xl:justify-center justify-start ml-[20px] 2xl:mr-[0px]">
             <div className="mr-[20px]">
               <img className="lg:w-[60px] w-[25px] sm:w-[40px]" src={person} />
