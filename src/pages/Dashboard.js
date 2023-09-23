@@ -429,7 +429,7 @@ const Dashboard = ({ show }) => {
               </h4>
             </div>
           </div>
-          <div className=" py-[0px] border-r-[1px]  2xl:border-r-[1px] border-b-[0px] border-gray-300 items-center flex 2xl:justify-center justify-start ml-[20px] 2xl:mr-[0px]">
+          {/* <div className=" py-[0px] border-r-[1px]  2xl:border-r-[1px] border-b-[0px] border-gray-300 items-center flex 2xl:justify-center justify-start ml-[20px] 2xl:mr-[0px]">
             <div className="mr-[20px]">
               <img className="lg:w-[60px] w-[25px] sm:w-[40px]" src={globe2} />
             </div>
@@ -441,7 +441,7 @@ const Dashboard = ({ show }) => {
                 Countries We Operate
               </h4>
             </div>
-          </div>
+          </div> */}
           <div className="pt-[0px] items-center flex 2xl:justify-center justify-start ml-[20px] 2xl:mr-[0px]">
             <div className="mr-[20px]">
               <img
