@@ -127,7 +127,7 @@ const Navbar = ({ show, setShow }) => {
             <div className="dropdown-menu rounded-[10px]">
               <h4 className="text-black p-[15px] hover:rounded-t-[10px] hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer">
                 <NavLink
-                  to="/capital"
+                  to="/"
                   style={({ isActive }) => ({
                     borderBottom: isActive ? "3px solid white" : "#f0f0f0",
                     borderBottom: isActive && fix ? "3px solid black" : "white",
@@ -140,7 +140,7 @@ const Navbar = ({ show, setShow }) => {
               </h4>
               <h4 className="text-black p-[15px]  hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer">
                 <NavLink
-                  to="/mineral"
+                  to="/"
                   style={({ isActive }) => ({
                     borderBottom: isActive ? "3px solid white" : "#f0f0f0",
                     paddingLeft: isActive ? 5 : 0,
@@ -152,7 +152,7 @@ const Navbar = ({ show, setShow }) => {
               </h4>
               <h4 className="text-black p-[15px]  hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer">
                 <NavLink
-                  to="/travels"
+                  to="/"
                   style={({ isActive }) => ({
                     borderBottom: isActive ? "3px solid white" : "#f0f0f0",
                     borderBottom: isActive && fix ? "3px solid black" : "white",
@@ -165,7 +165,7 @@ const Navbar = ({ show, setShow }) => {
               </h4>
               <h4 className="text-black p-[15px] hover:rounded-b-[10px] hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer">
                 <NavLink
-                  to="/energy"
+                  to="/"
                   style={({ isActive }) => ({
                     borderBottom: isActive ? "3px solid white" : "#f0f0f0",
                     borderBottom: isActive && fix ? "3px solid black" : "white",
