@@ -317,7 +317,7 @@ const Navbar = ({ show, setShow }) => {
                     className="text-black p-[15px] hover:rounded-t-[10px] hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer flex justify-center"
                   >
                     <NavLink
-                      to="/capital"
+                      to="/"
                       style={({ isActive }) => ({
                         borderBottom: isActive ? "black 3px solid" : " ",
 
@@ -333,7 +333,7 @@ const Navbar = ({ show, setShow }) => {
                     className="text-black p-[15px]  hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer flex justify-center"
                   >
                     <NavLink
-                      to="/mineral"
+                      to="/"
                       style={({ isActive }) => ({
                         borderBottom: isActive ? "black 3px solid" : " ",
 
@@ -349,7 +349,7 @@ const Navbar = ({ show, setShow }) => {
                     className="text-black p-[15px]  hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer flex justify-center"
                   >
                     <NavLink
-                      to="/travels"
+                      to="/"
                       style={({ isActive }) => ({
                         borderBottom: isActive ? "black 3px solid" : " ",
 
@@ -365,7 +365,7 @@ const Navbar = ({ show, setShow }) => {
                     className="text-black p-[15px] hover:rounded-b-[10px] hover:text-white hover:bg-black  text-[12px] md:text-[16px]  font-normal cursor-pointer flex justify-center"
                   >
                     <NavLink
-                      to="/energy"
+                      to="/"
                       style={({ isActive }) => ({
                         borderBottom: isActive ? "black 3px solid" : " ",
 
